@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tool="http://schemas.android.com/tools">
+
+    <data>
+        <import type="android.view.View" />
+        <variable
+            name="video"
+            type="com.example.moviedbsearch.model.Video" />
+
+        <variable
+            name="itemClickInterface"
+            type="com.example.moviedbsearch.ui.VideoClickListener" />
+    </data>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardview"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_margin="4dp"
+        app:cardCornerRadius="4dp"
+        app:cardBackgroundColor="@color/colorPrimary"
+        android:onClick="@{() -> itemClickInterface.onVideoItemClick(video)}">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/item_video_thumbnail"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/ic_video"
+                android:layout_marginTop="1dp"
+                android:contentDescription="@string/video_image" />
+
+            <TextView
+                android:layout_marginTop="1dp"
+                android:id="@+id/movieTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@{video.name}"
+                android:layout_marginStart="4dp"
+                android:layout_gravity="center_horizontal"
+                tool:text="Video Baslıgı" />
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</layout>

@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">MovieDbSearch</string>
+    <string name="search">Search…</string>
+    <string name="cancel">Cancel</string>
+    <string name="most_populars">Most Populars</string>
+    <string name="long_text">Bu bir denemedir, bu bir denemedir, bu bir denemedir, bu bir denemedir, Bu bir denemedir, bu bir denemedir, bu bir denemedir, bu bir denemedir,</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="movies">Movies</string>
+    <string name="people">People</string>
+    <string name="person">person</string>
+    <string name="movie">movie</string>
+    <string name="tv">TV</string>
+    <string name="tv2">tv</string>
+    <string name="summary">Summary</string>
+    <string name="videos">Videos</string>
+    <string name="cast">Cast</string>
+    <string name="video_image">video image</string>
+    <string name="cast_poster">cast poster</string>
+    <string name="background_trans_pic">background trans pic</string>
+    <string name="main_picture">main picture</string>
+    <string name="overview">Overview</string>
+    <string name="tvs">TVs</string>
+</resources>

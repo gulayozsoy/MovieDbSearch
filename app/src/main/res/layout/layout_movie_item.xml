@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tool="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="castMovie"
+            type="com.example.moviedbsearch.model.CastMovie" />
+    </data>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardview"
+        android:layout_width="105dp"
+        android:layout_height="130dp"
+        android:layout_margin="4dp"
+        app:cardCornerRadius="4dp"
+        app:cardBackgroundColor="@color/colorPrimary" >
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_marginTop="1dp"
+                android:id="@+id/moviePoster"
+                android:scaleType="center"
+                android:layout_width="match_parent"
+                android:layout_height="110dp"
+                app:imageUrl="@{castMovie.posterPath}"
+                android:contentDescription="@string/cast_poster"
+                tool:src="@drawable/ic_image"/>
+
+            <TextView
+                android:layout_marginTop="1dp"
+                android:id="@+id/movieTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@{castMovie.title}"
+                android:layout_marginStart="4dp"
+                android:layout_gravity="center_horizontal"
+                tool:text="Movie Baslıgı" />
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</layout>
